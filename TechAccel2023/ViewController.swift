@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import AVFAudio
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    private var player: AVAudioPlayer!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        switch AudioPlayerFactory.makePlayer(.opening) {
+        case .success(let player):
+            self.player = player
+            player.delegate = self
+            player.volume = 1
+            player.prepareToPlay()
+            player.play()
+        case .failure(let error):
+            print(error)
+        }
     }
-
-
 }
 
+extension ViewController: AVAudioPlayerDelegate {
+}
