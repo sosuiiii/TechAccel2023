@@ -16,6 +16,7 @@
 		534978862AAA1D3E006D43F9 /* TechAccel2023Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534978852AAA1D3E006D43F9 /* TechAccel2023Tests.swift */; };
 		534978902AAA1D3E006D43F9 /* TechAccel2023UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5349788F2AAA1D3E006D43F9 /* TechAccel2023UITests.swift */; };
 		534978922AAA1D3E006D43F9 /* TechAccel2023UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534978912AAA1D3E006D43F9 /* TechAccel2023UITestsLaunchTests.swift */; };
+		53589CE52AAA2B54003EF801 /* x12y12pxMaruMinya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5349788B2AAA1D3E006D43F9 /* TechAccel2023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechAccel2023UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5349788F2AAA1D3E006D43F9 /* TechAccel2023UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechAccel2023UITests.swift; sourceTree = "<group>"; };
 		534978912AAA1D3E006D43F9 /* TechAccel2023UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechAccel2023UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = x12y12pxMaruMinya.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		5349786D2AAA1D3D006D43F9 /* TechAccel2023 */ = {
 			isa = PBXGroup;
 			children = (
+				53589CE32AAA2B46003EF801 /* fonts */,
 				5349786E2AAA1D3D006D43F9 /* AppDelegate.swift */,
 				534978702AAA1D3D006D43F9 /* SceneDelegate.swift */,
 				534978722AAA1D3D006D43F9 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				534978912AAA1D3E006D43F9 /* TechAccel2023UITestsLaunchTests.swift */,
 			);
 			path = TechAccel2023UITests;
+			sourceTree = "<group>";
+		};
+		53589CE32AAA2B46003EF801 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 				5349787B2AAA1D3E006D43F9 /* LaunchScreen.storyboard in Resources */,
 				534978782AAA1D3E006D43F9 /* Assets.xcassets in Resources */,
 				534978762AAA1D3D006D43F9 /* Main.storyboard in Resources */,
+				53589CE52AAA2B54003EF801 /* x12y12pxMaruMinya.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
