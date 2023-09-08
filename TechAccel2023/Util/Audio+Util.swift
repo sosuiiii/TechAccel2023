@@ -11,6 +11,7 @@ import Foundation
 enum PokemonBGM: String {
     /// 01~オープニング~
     case opening = "01opening"
+    case select = "select"
 }
 
 struct AudioError: Error {
@@ -21,13 +22,20 @@ struct AudioError: Error {
     }
 }
 
-enum AudioPlayerFactory {
-    static func makePlayer(_ fileType: PokemonBGM) -> Result<AVAudioPlayer, Error> {
-        let filename: String
-        switch fileType {
-        case .opening:
-            filename = fileType.rawValue
+final class AudioPlayerFactory {
+    static let shared = AudioPlayerFactory()
+    var openingSounds: AVAudioPlayer?
+    var selectSounds: AVAudioPlayer?
+    private init() {
+        if case let .success(player) = AudioPlayerFactory.makePlayer(.opening) {
+            openingSounds = player
         }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(.select) {
+            selectSounds = player
+        }
+    }
+    static func makePlayer(_ fileType: PokemonBGM) -> Result<AVAudioPlayer, Error> {
+        let filename = fileType.rawValue
         guard let path = Bundle.main.path(forResource: filename, ofType: "wav") else {
             return .failure(AudioError(type: .notFoundFile))
         }

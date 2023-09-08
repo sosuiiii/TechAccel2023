@@ -11,7 +11,7 @@ enum ImageURL {
     enum Pokemon {
         // 1.フシギダネ,2.フシギソウ,3.フシギバナ
         // 4.ヒトカゲ,5.リザード,6.リザードン
-        // 7.ゼニガメ,8.カメール,9.カメックス
+        // 7.ゼニガメ,8.カメール,9.カメックス, 10...1010
         static func urlString(_ id: Int8) -> String {
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(id).png"
         }
