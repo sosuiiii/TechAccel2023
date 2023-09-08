@@ -1,0 +1,76 @@
+strings:
+  - inputs: ../TechAccel2023/TechAccel2023/Resources/text.strings
+    outputs:
+      - templateName: structured-swift5
+        output: ../TechAccel2023/TechAccel2023/Generated/StringsGen.swift
+
+xcassets:
+  - inputs:
+    - ../TechAccel2023/TechAccel2023/Resources/Images.xcassets
+    - ../TechAccel2023/TechAccel2023/Resources/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: ../TechAccel2023/TechAccel2023/Generated/Assets.swift
+fonts:
+  - inputs:
+    - ../TechAccel2023/TechAccel2023/Resources/fonts
+    outputs:
+      - templateName: swift5
+        output: ../TechAccel2023/TechAccel2023/Generated/Fonts.swift
+files:
+  - inputs:
+    - ../TechAccel2023/TechAccel2023/Resources/sounds
+    outputs:
+      - templateName: structured-swift5
+        output: ../TechAccel2023/TechAccel2023/Generated/Sounds.swift
+
+#templateName
+#colors:
+#   - literals-swift4
+#   - literals-swift5
+#   - swift4
+#   - swift5
+#coredata:
+#   - swift4
+#   - swift5
+#files:
+#   - flat-swift4
+#   - flat-swift5
+#   - structured-swift4
+#   - structured-swift5
+#fonts:
+#   - swift4
+#   - swift5
+#ib:
+#   - scenes-swift4
+#   - scenes-swift5
+#   - segues-swift4
+#   - segues-swift5
+#json:
+#   - inline-swift4
+#   - inline-swift5
+#   - runtime-swift4
+#   - runtime-swift5
+#plist:
+#   - inline-swift4
+#   - inline-swift5
+#   - runtime-swift4
+#   - runtime-swift5
+#storyboards:
+#   - scenes-swift4
+#   - scenes-swift5
+#   - segues-swift4
+#   - segues-swift5
+#strings:
+#   - flat-swift4
+#   - flat-swift5
+#   - objc-h
+#   - objc-m
+#   - structured-swift4
+#   - structured-swift5
+#xcassets:
+#   - swift4
+#   - swift5
+#yaml:
+#   - inline-swift4
+#   - inline-swift5
