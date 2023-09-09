@@ -16,6 +16,10 @@ internal enum L10n {
   internal static let bulbasaur = L10n.tr("text", "bulbasaur", fallback: "フシギダネ")
   /// ヒトカゲ
   internal static let charmander = L10n.tr("text", "charmander", fallback: "ヒトカゲ")
+  /// %@、きみに きめた！
+  internal static func choicedPokemon(_ p1: Any) -> String {
+    return L10n.tr("text", "choicedPokemon!", String(describing: p1), fallback: "%@、きみに きめた！")
+  }
   /// ▶︎ポケモンをえらぶ
   internal static let choicePokemon = L10n.tr("text", "choicePokemon", fallback: "▶︎ポケモンをえらぶ")
   /// つづきから

@@ -26,6 +26,7 @@ struct ChoicePokemonScreen: View {
                 Spacer()
                 if let choicedPokemon {
                     NavigationLink {
+                        StartAdventureScreen(pokemon: choicedPokemon)
                     } label: {
                         pokemonFontText(L10n.startAdventure)
                             .padding(.bottom, 12)
