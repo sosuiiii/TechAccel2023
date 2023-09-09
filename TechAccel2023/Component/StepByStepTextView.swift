@@ -20,7 +20,7 @@ struct StepByStepTextView: View {
     var body: some View {
         HStack(spacing: 5) {
             Text(text)
-                .font(.custom("x12y12pxMaruMinya", size: 16))
+                .font(.custom(FontFamily.X12y12pxMaruMinya.regular.family, size: 16))
                 .lineLimit(5)
                 .kerning(1)
                 .lineSpacing(2)

@@ -18,7 +18,7 @@ extension View {
 
     func pokemonFontText(_ text: String) -> some View {
         Text(text)
-            .font(.custom("x12y12pxMaruMinya", size: 18))
+            .font(.custom(FontFamily.X12y12pxMaruMinya.regular.family, size: 18))
             .foregroundColor(.white)
     }
 }

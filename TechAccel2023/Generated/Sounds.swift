@@ -12,6 +12,8 @@ import Foundation
 internal enum Files {
   /// 01opening.wav
   internal static let _01openingWav = File(name: "01opening", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// 04okid.wav
+  internal static let _04okidWav = File(name: "04okid", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
   /// select.wav
   internal static let selectWav = File(name: "select", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
 }

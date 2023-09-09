@@ -37,6 +37,10 @@ struct GetStartView: View {
 
                 case .choicePokemon:
                     choicePokemonView()
+                        .onAppear {
+                            AudioPlayerFactory.shared.openingSounds = nil
+                            AudioPlayerFactory.shared.okidSounds?.play()
+                        }
                 }
             }
         }
@@ -44,7 +48,7 @@ struct GetStartView: View {
 
     private func pushStartButton() -> some View {
         ZStack(alignment: .center) {
-            Image("start")
+            Asset.Images.start.swiftUIImage
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity)
@@ -52,8 +56,8 @@ struct GetStartView: View {
                 AudioPlayerFactory.shared.selectSounds?.play()
                 startState = .beginningOrContinuation
             }, label: {
-                Text("PUSH START BUTTON")
-                    .font(.custom("x12y12pxMaruMinya", size: 18))
+                Text(L10n.startButton)
+                    .font(.custom(FontFamily.X12y12pxMaruMinya.regular.family, size: 18))
                     .foregroundColor(.white)
             })
             .padding(.top, 42)
@@ -62,7 +66,7 @@ struct GetStartView: View {
 
     private func beginningOrContinuation() -> some View {
         ZStack(alignment: .center) {
-            Image("start")
+            Asset.Images.start.swiftUIImage
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity)
@@ -72,7 +76,7 @@ struct GetStartView: View {
                     AudioPlayerFactory.shared.selectSounds?.play()
                     startState = .choicePokemon
                 }, label: {
-                    pokemonFontText("はじめから")
+                    pokemonFontText(L10n.beginning)
                         .foregroundColor(.white)
                 })
                 .padding(.top, 30)
@@ -81,7 +85,7 @@ struct GetStartView: View {
                 Button(action: {
                     close()
                 }, label: {
-                    pokemonFontText("つづきから")
+                    pokemonFontText(L10n.continuation)
                         .foregroundColor(.white)
                 })
             }
@@ -90,15 +94,15 @@ struct GetStartView: View {
 
     private func choicePokemonView() -> some View {
         Group {
-            Image("okid")
-            StepByStepTextView("ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？。") {
+            Asset.Images.okid.swiftUIImage
+            StepByStepTextView(L10n.startOkid) {
                 isFinishAnimation = true
             }
             if isFinishAnimation {
                 NavigationLink {
                     EmptyView()
                 } label: {
-                    pokemonFontText("▶︎ポケモンをえらぶ")
+                    pokemonFontText(L10n.choicePokemon)
                         .padding(.top, 10)
                 }
             }

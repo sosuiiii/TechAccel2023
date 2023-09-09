@@ -22,6 +22,7 @@
 		5356F4F62AAB7ED40068E55D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356F4F52AAB7ED40068E55D /* Assets.swift */; };
 		5356F4F82AAB7F750068E55D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356F4F72AAB7F750068E55D /* Fonts.swift */; };
 		5356F4FA2AAB80000068E55D /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356F4F92AAB80000068E55D /* Sounds.swift */; };
+		5356F4FC2AABFF140068E55D /* 04okid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5356F4FB2AABFF140068E55D /* 04okid.wav */; };
 		53589CE52AAA2B54003EF801 /* x12y12pxMaruMinya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */; };
 		53589CF12AAA90B0003EF801 /* 01opening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53589CF02AAA90B0003EF801 /* 01opening.wav */; };
 		53589CF42AAA91BB003EF801 /* Audio+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53589CF32AAA91BB003EF801 /* Audio+Util.swift */; };
@@ -75,6 +76,7 @@
 		5356F4F52AAB7ED40068E55D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		5356F4F72AAB7F750068E55D /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		5356F4F92AAB80000068E55D /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		5356F4FB2AABFF140068E55D /* 04okid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 04okid.wav; sourceTree = "<group>"; };
 		53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = x12y12pxMaruMinya.ttf; sourceTree = "<group>"; };
 		53589CF02AAA90B0003EF801 /* 01opening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 01opening.wav; sourceTree = "<group>"; };
 		53589CF32AAA91BB003EF801 /* Audio+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Audio+Util.swift"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 		53589CED2AAA903D003EF801 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				5356F4FB2AABFF140068E55D /* 04okid.wav */,
 				53589D002AAB200E003EF801 /* select.wav */,
 				53589CF02AAA90B0003EF801 /* 01opening.wav */,
 			);
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53589CF12AAA90B0003EF801 /* 01opening.wav in Resources */,
+				5356F4FC2AABFF140068E55D /* 04okid.wav in Resources */,
 				53589D012AAB200E003EF801 /* select.wav in Resources */,
 				5349787B2AAA1D3E006D43F9 /* LaunchScreen.storyboard in Resources */,
 				534978782AAA1D3E006D43F9 /* Images.xcassets in Resources */,

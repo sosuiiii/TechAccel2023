@@ -8,12 +8,6 @@
 import AVFAudio
 import Foundation
 
-enum PokemonBGM: String {
-    /// 01~オープニング~
-    case opening = "01opening"
-    case select = "select"
-}
-
 struct AudioError: Error {
     let type: AudioErrorType
     enum AudioErrorType {
@@ -25,27 +19,28 @@ struct AudioError: Error {
 final class AudioPlayerFactory {
     static let shared = AudioPlayerFactory()
     var openingSounds: AVAudioPlayer?
+    var okidSounds: AVAudioPlayer?
     var selectSounds: AVAudioPlayer?
-    private init() {
-        if case let .success(player) = AudioPlayerFactory.makePlayer(.opening) {
+    init() {
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files._01openingWav) {
             openingSounds = player
         }
-        if case let .success(player) = AudioPlayerFactory.makePlayer(.select) {
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files._04okidWav) {
+            okidSounds = player
+        }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files.selectWav, repeatCount: 0) {
             selectSounds = player
         }
     }
-    static func makePlayer(_ fileType: PokemonBGM) -> Result<AVAudioPlayer, Error> {
-        let filename = fileType.rawValue
-        guard let path = Bundle.main.path(forResource: filename, ofType: "wav") else {
-            return .failure(AudioError(type: .notFoundFile))
-        }
-        let soundFileURL = URL(fileURLWithPath: path)
+    static func makePlayer(_ file: File, repeatCount: Int = 3) -> Result<AVAudioPlayer, Error> {
+        let soundFileURL = URL(fileURLWithPath: file.path)
         do {
             try AVAudioSession.sharedInstance().setCategory(
                 AVAudioSession.Category.ambient
             )
             try AVAudioSession.sharedInstance().setActive(true)
             let player = try AVAudioPlayer(contentsOf: soundFileURL)
+            player.numberOfLoops = repeatCount
             return .success(player)
         } catch {
             return .failure(error)

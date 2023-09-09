@@ -5,3 +5,9 @@
   Created by 田中 颯志 on 9/9/23.
   
 */
+
+"startButton" = "PUSH START BUTTON";
+"beginning" = "はじめから";
+"continuation" = "つづきから";
+"startOkid" = "ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？。";
+"choicePokemon" = "▶︎ポケモンをえらぶ";
