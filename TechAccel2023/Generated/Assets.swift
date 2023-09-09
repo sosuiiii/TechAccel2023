@@ -32,8 +32,17 @@ internal enum Asset {
     internal static let masterBall = ImageAsset(name: "master_ball")
     internal static let nomalBall = ImageAsset(name: "nomal_ball")
     internal static let superBall = ImageAsset(name: "super_ball")
+    internal static let fushigibana = ImageAsset(name: "fushigibana")
+    internal static let fushigidane = ImageAsset(name: "fushigidane")
+    internal static let fushigiso = ImageAsset(name: "fushigiso")
+    internal static let hitokage = ImageAsset(name: "hitokage")
+    internal static let kameru = ImageAsset(name: "kameru")
+    internal static let kamex = ImageAsset(name: "kamex")
     internal static let okid = ImageAsset(name: "okid")
+    internal static let rizard = ImageAsset(name: "rizard")
+    internal static let rizardon = ImageAsset(name: "rizardon")
     internal static let start = ImageAsset(name: "start")
+    internal static let zenigame = ImageAsset(name: "zenigame")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

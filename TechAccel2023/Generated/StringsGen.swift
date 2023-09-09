@@ -12,10 +12,22 @@ import Foundation
 internal enum L10n {
   /// はじめから
   internal static let beginning = L10n.tr("text", "beginning", fallback: "はじめから")
+  /// フシギダネ
+  internal static let bulbasaur = L10n.tr("text", "bulbasaur", fallback: "フシギダネ")
+  /// ヒトカゲ
+  internal static let charmander = L10n.tr("text", "charmander", fallback: "ヒトカゲ")
   /// ▶︎ポケモンをえらぶ
   internal static let choicePokemon = L10n.tr("text", "choicePokemon", fallback: "▶︎ポケモンをえらぶ")
   /// つづきから
   internal static let continuation = L10n.tr("text", "continuation", fallback: "つづきから")
+  /// %@にするかい？。
+  internal static func getPokemon(_ p1: Any) -> String {
+    return L10n.tr("text", "getPokemon?", String(describing: p1), fallback: "%@にするかい？。")
+  }
+  /// ゼニガメ
+  internal static let squirtle = L10n.tr("text", "squirtle", fallback: "ゼニガメ")
+  /// ▶︎ぼうけんをはじめる
+  internal static let startAdventure = L10n.tr("text", "startAdventure", fallback: "▶︎ぼうけんをはじめる")
   /// text.strings
   ///   TechAccel2023
   /// 

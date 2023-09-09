@@ -21,6 +21,9 @@ final class AudioPlayerFactory {
     var openingSounds: AVAudioPlayer?
     var okidSounds: AVAudioPlayer?
     var selectSounds: AVAudioPlayer?
+    var fushigidaneSounds: AVAudioPlayer?
+    var hitokageSounds: AVAudioPlayer?
+    var zenigameSounds: AVAudioPlayer?
     init() {
         if case let .success(player) = AudioPlayerFactory.makePlayer(Files._01openingWav) {
             openingSounds = player
@@ -30,6 +33,15 @@ final class AudioPlayerFactory {
         }
         if case let .success(player) = AudioPlayerFactory.makePlayer(Files.selectWav, repeatCount: 0) {
             selectSounds = player
+        }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files.fushigidaneWav, repeatCount: 0) {
+            fushigidaneSounds = player
+        }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files.hitokageWav, repeatCount: 0) {
+            hitokageSounds = player
+        }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files.zenigameWav, repeatCount: 0) {
+            zenigameSounds = player
         }
     }
     static func makePlayer(_ file: File, repeatCount: Int = 3) -> Result<AVAudioPlayer, Error> {

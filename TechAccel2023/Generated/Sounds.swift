@@ -14,8 +14,14 @@ internal enum Files {
   internal static let _01openingWav = File(name: "01opening", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
   /// 04okid.wav
   internal static let _04okidWav = File(name: "04okid", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// fushigidane.wav
+  internal static let fushigidaneWav = File(name: "fushigidane", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// hitokage.wav
+  internal static let hitokageWav = File(name: "hitokage", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
   /// select.wav
   internal static let selectWav = File(name: "select", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// zenigame.wav
+  internal static let zenigameWav = File(name: "zenigame", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
 }
 // swiftlint:enable explicit_type_interface identifier_name
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
