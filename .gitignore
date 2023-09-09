@@ -1,0 +1,61 @@
+# Mac OSX
+#
+.DS_Store
+
+# Xcode
+#
+.build/
+/build/
+ModuleCache/
+output/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+xcodebuild.json
+AbemaTV.xcodeproj
+Targets/*/*.xcodeproj
+Targets/AbemaTV/AbemaTV/Resources/GoogleService-Info.plist
+
+# CocoaPods
+/Pods/*.xcworkspace
+/Pods/*.xcodeproj
+/Pods/*
+!/Pods/.gitignore
+!/Pods/Manifest.lock
+!/Pods/xcodebuild.version
+!/Pods/_Build
+/Pods/_Build/Pods.build
+/Pods/_Build/XCBuildData
+!/Pods/Target Support Files
+/Pods/Target Support Files/*
+!/Pods/Target Support Files/Pods-*
+!/Pods/.checksums
+
+## 各Pod配下のファイルを直接使用する必要がある場合ignoreを解除する
+# 他の除外ファイルは Pods/.gitignore を参照
+/Pods/SwiftGen
+/Pods/SwiftLint
+
+# Bundler / Ruby Gem
+.bundle/
+vendor/
+
+# Node
+node_modules
+
+# Intellij project files
+.idea/*
+*.iml
