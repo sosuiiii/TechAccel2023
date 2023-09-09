@@ -100,7 +100,7 @@ struct GetStartView: View {
             }
             if isFinishAnimation {
                 NavigationLink {
-                    EmptyView()
+                    ChoicePokemonScreen()
                 } label: {
                     pokemonFontText(L10n.choicePokemon)
                         .padding(.top, 10)
