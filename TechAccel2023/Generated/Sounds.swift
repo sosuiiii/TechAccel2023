@@ -14,6 +14,14 @@ internal enum Files {
   internal static let _01openingWav = File(name: "01opening", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
   /// 04okid.wav
   internal static let _04okidWav = File(name: "04okid", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// 07battle_to_wild.wav
+  internal static let _07battleToWildWav = File(name: "07battle_to_wild", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// 08win_to_wild.wav
+  internal static let _08winToWildWav = File(name: "08win_to_wild", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// 09nibi_city.wav
+  internal static let _09nibiCityWav = File(name: "09nibi_city", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
+  /// 41evolution.wav
+  internal static let _41evolutionWav = File(name: "41evolution", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
   /// fushigidane.wav
   internal static let fushigidaneWav = File(name: "fushigidane", ext: "wav", relativePath: "", mimeType: "audio/vnd.wave")
   /// hitokage.wav

@@ -35,9 +35,11 @@ struct StepByStepTextView: View {
         .onAppear {
             characters.enumerated().forEach { index, element in
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 * Double(index)) {
-                    if element == "," {
+                    if element == "," || index == 0 {
                         text = ""
+                        text += "\(element)"
                     } else if index == characters.count - 1 {
+                        text += "\(element)"
                         finishAnimation()
                     } else {
                         text += "\(element)"

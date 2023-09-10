@@ -9,10 +9,10 @@
 "startButton" = "PUSH START BUTTON";
 "beginning" = "はじめから";
 "continuation" = "つづきから";
-"startOkid" = "ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？。";
+"startOkid" = "ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？";
 "choicePokemon" = "▶︎ポケモンをえらぶ";
 "startAdventure" = "▶︎ぼうけんをはじめる";
-"getPokemon?" = "%@にするかい？。";
+"getPokemon?" = "%@にするかい？";
 "bulbasaur" = "フシギダネ";
 "charmander" = "ヒトカゲ";
 "squirtle" = "ゼニガメ";
@@ -20,3 +20,5 @@
 "battle" = "バトル";
 "gacha" = "ガチャ";
 "ball" = "一覧";
+"encounterPokemon" = "やせいの %@ があわられた！";
+"map" = "マップ";

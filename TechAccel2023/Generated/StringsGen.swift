@@ -28,12 +28,18 @@ internal enum L10n {
   internal static let choicePokemon = L10n.tr("text", "choicePokemon", fallback: "▶︎ポケモンをえらぶ")
   /// つづきから
   internal static let continuation = L10n.tr("text", "continuation", fallback: "つづきから")
+  /// やせいの %@ があわられた！
+  internal static func encounterPokemon(_ p1: Any) -> String {
+    return L10n.tr("text", "encounterPokemon", String(describing: p1), fallback: "やせいの %@ があわられた！")
+  }
   /// ガチャ
   internal static let gacha = L10n.tr("text", "gacha", fallback: "ガチャ")
-  /// %@にするかい？。
+  /// %@にするかい？
   internal static func getPokemon(_ p1: Any) -> String {
-    return L10n.tr("text", "getPokemon?", String(describing: p1), fallback: "%@にするかい？。")
+    return L10n.tr("text", "getPokemon?", String(describing: p1), fallback: "%@にするかい？")
   }
+  /// マップ
+  internal static let map = L10n.tr("text", "map", fallback: "マップ")
   /// ゼニガメ
   internal static let squirtle = L10n.tr("text", "squirtle", fallback: "ゼニガメ")
   /// ▶︎ぼうけんをはじめる
@@ -43,8 +49,8 @@ internal enum L10n {
   /// 
   ///   Created by 田中 颯志 on 9/9/23.
   internal static let startButton = L10n.tr("text", "startButton", fallback: "PUSH START BUTTON")
-  /// ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？。
-  internal static let startOkid = L10n.tr("text", "startOkid", fallback: "ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？。")
+  /// ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？
+  internal static let startOkid = L10n.tr("text", "startOkid", fallback: "ポケットモンスターの せかい へ ようこそ！ さっそくだが、いっしょにぼうけんにでかける　ポケモンを　えらんでもらえないか？")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

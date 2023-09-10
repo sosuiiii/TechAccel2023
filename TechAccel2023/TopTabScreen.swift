@@ -12,7 +12,7 @@ struct TopTabScreen: View, Hashable {
     let choicedPokemon: StartPokemon
     var body: some View {
         TabView {
-            Text("b")
+            BattleScreen()
                 .tabItem {
                     VStack {
                         Asset.Images.sword.swiftUIImage
@@ -22,7 +22,7 @@ struct TopTabScreen: View, Hashable {
                 }
                 .tag(0)
 
-            Text("a")
+            MapScreen()
                 .tabItem {
                     VStack {
                         Asset.Images.ball.swiftUIImage

@@ -17,13 +17,14 @@ struct AudioError: Error {
 }
 
 final class AudioPlayerFactory {
-    static let shared = AudioPlayerFactory()
+    static var shared = AudioPlayerFactory()
     var openingSounds: AVAudioPlayer?
     var okidSounds: AVAudioPlayer?
     var selectSounds: AVAudioPlayer?
     var fushigidaneSounds: AVAudioPlayer?
     var hitokageSounds: AVAudioPlayer?
     var zenigameSounds: AVAudioPlayer?
+    var battleToWildSounds: AVAudioPlayer?
     init() {
         if case let .success(player) = AudioPlayerFactory.makePlayer(Files._01openingWav) {
             openingSounds = player
@@ -42,6 +43,9 @@ final class AudioPlayerFactory {
         }
         if case let .success(player) = AudioPlayerFactory.makePlayer(Files.zenigameWav, repeatCount: 0) {
             zenigameSounds = player
+        }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files._07battleToWildWav) {
+            battleToWildSounds = player
         }
     }
     static func makePlayer(_ file: File, repeatCount: Int = 3) -> Result<AVAudioPlayer, Error> {
