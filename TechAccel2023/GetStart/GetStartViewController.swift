@@ -12,7 +12,7 @@ final class GetStartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let getStartView = GetStartView {}
+        let getStartView = GetStartView()
         let getStartUiView = getStartView.uiview()
         view.addSubview(getStartUiView)
         NSLayoutConstraint.activate([

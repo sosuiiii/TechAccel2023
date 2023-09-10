@@ -34,6 +34,8 @@ internal enum Asset {
     internal static let masterBall = ImageAsset(name: "master_ball")
     internal static let nomalBall = ImageAsset(name: "nomal_ball")
     internal static let superBall = ImageAsset(name: "super_ball")
+    internal static let bag = ImageAsset(name: "bag")
+    internal static let ball = ImageAsset(name: "ball")
     internal static let fushigibana = ImageAsset(name: "fushigibana")
     internal static let fushigidane = ImageAsset(name: "fushigidane")
     internal static let fushigiso = ImageAsset(name: "fushigiso")
@@ -43,7 +45,9 @@ internal enum Asset {
     internal static let okid = ImageAsset(name: "okid")
     internal static let rizard = ImageAsset(name: "rizard")
     internal static let rizardon = ImageAsset(name: "rizardon")
+    internal static let shopping = ImageAsset(name: "shopping")
     internal static let start = ImageAsset(name: "start")
+    internal static let sword = ImageAsset(name: "sword")
     internal static let zenigame = ImageAsset(name: "zenigame")
   }
 }

@@ -11,8 +11,12 @@ import SwiftUI
 struct StartAdventureScreen: View {
     let pokemon: StartPokemon
     @State private var y: CGFloat = 0
+    @State private var transitionToTopTab = false
+    init(pokemon: StartPokemon) {
+        self.pokemon = pokemon
+    }
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 Spacer()
                 pokemon.image
@@ -21,6 +25,9 @@ struct StartAdventureScreen: View {
                     .offset(y: y)
                 pokemonFontText(L10n.choicedPokemon(pokemon.name))
                 Spacer()
+            }
+            .navigationDestination(isPresented: $transitionToTopTab) {
+                TopTabScreen()
             }
             .onAppear {
                 jump(delay: 0)
@@ -36,6 +43,9 @@ struct StartAdventureScreen: View {
                     case .zenigame:
                         AudioPlayerFactory.shared.zenigameSounds?.play()
                     }
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    transitionToTopTab = true
                 }
             }
         }

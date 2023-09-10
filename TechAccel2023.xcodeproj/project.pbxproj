@@ -29,6 +29,7 @@
 		5356F5052AAC1BBC0068E55D /* zenigame.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5356F5022AAC1BBC0068E55D /* zenigame.wav */; };
 		5356F5082AAC1F4B0068E55D /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356F5072AAC1F4B0068E55D /* Pokemon.swift */; };
 		5356F50B2AAC23220068E55D /* StartAdventureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356F50A2AAC23220068E55D /* StartAdventureScreen.swift */; };
+		5356F50D2AACBCC50068E55D /* TopTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356F50C2AACBCC50068E55D /* TopTabScreen.swift */; };
 		53589CE52AAA2B54003EF801 /* x12y12pxMaruMinya.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */; };
 		53589CF12AAA90B0003EF801 /* 01opening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53589CF02AAA90B0003EF801 /* 01opening.wav */; };
 		53589CF42AAA91BB003EF801 /* Audio+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53589CF32AAA91BB003EF801 /* Audio+Util.swift */; };
@@ -89,6 +90,7 @@
 		5356F5022AAC1BBC0068E55D /* zenigame.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zenigame.wav; sourceTree = "<group>"; };
 		5356F5072AAC1F4B0068E55D /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		5356F50A2AAC23220068E55D /* StartAdventureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAdventureScreen.swift; sourceTree = "<group>"; };
+		5356F50C2AACBCC50068E55D /* TopTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabScreen.swift; sourceTree = "<group>"; };
 		53589CE42AAA2B54003EF801 /* x12y12pxMaruMinya.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = x12y12pxMaruMinya.ttf; sourceTree = "<group>"; };
 		53589CF02AAA90B0003EF801 /* 01opening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 01opening.wav; sourceTree = "<group>"; };
 		53589CF32AAA91BB003EF801 /* Audio+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Audio+Util.swift"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				534978702AAA1D3D006D43F9 /* SceneDelegate.swift */,
 				534978792AAA1D3E006D43F9 /* LaunchScreen.storyboard */,
 				5349787C2AAA1D3E006D43F9 /* Info.plist */,
+				5356F50C2AACBCC50068E55D /* TopTabScreen.swift */,
 			);
 			path = TechAccel2023;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				53589CFF2AAB0EA1003EF801 /* View+Extension.swift in Sources */,
 				534978732AAA1D3D006D43F9 /* GetStartViewController.swift in Sources */,
 				53589CF92AAAB0EA003EF801 /* GetStartView.swift in Sources */,
+				5356F50D2AACBCC50068E55D /* TopTabScreen.swift in Sources */,
 				5356F5082AAC1F4B0068E55D /* Pokemon.swift in Sources */,
 				5349786F2AAA1D3D006D43F9 /* AppDelegate.swift in Sources */,
 				53589CF42AAA91BB003EF801 /* Audio+Util.swift in Sources */,

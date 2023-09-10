@@ -18,12 +18,8 @@ struct GetStartView: View {
     @State private var startState: StartState = .pushStartButton
     @State private var isFinishAnimation = false
     @State private var choicePokemon = false
-    private let close: (() -> Void)
-    init(_ closeHandler: @escaping (() -> Void)) {
-        self.close = closeHandler
-    }
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .center) {
                 switch startState {
                 case .pushStartButton:
@@ -56,9 +52,7 @@ struct GetStartView: View {
                 AudioPlayerFactory.shared.selectSounds?.play()
                 startState = .beginningOrContinuation
             }, label: {
-                Text(L10n.startButton)
-                    .font(.custom(FontFamily.X12y12pxMaruMinya.regular.family, size: 18))
-                    .foregroundColor(.white)
+                pokemonFontText(L10n.startButton)
             })
             .padding(.top, 42)
         }
@@ -77,17 +71,15 @@ struct GetStartView: View {
                     startState = .choicePokemon
                 }, label: {
                     pokemonFontText(L10n.beginning)
-                        .foregroundColor(.white)
                 })
                 .padding(.top, 30)
                 .padding(.vertical, 12)
-                
-                Button(action: {
-                    close()
-                }, label: {
+
+                NavigationLink {
+                    TopTabScreen()
+                } label: {
                     pokemonFontText(L10n.continuation)
-                        .foregroundColor(.white)
-                })
+                }
             }
         }
     }

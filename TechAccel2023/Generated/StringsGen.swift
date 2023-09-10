@@ -10,6 +10,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// 一覧
+  internal static let ball = L10n.tr("text", "ball", fallback: "一覧")
+  /// バトル
+  internal static let battle = L10n.tr("text", "battle", fallback: "バトル")
   /// はじめから
   internal static let beginning = L10n.tr("text", "beginning", fallback: "はじめから")
   /// フシギダネ
@@ -24,6 +28,8 @@ internal enum L10n {
   internal static let choicePokemon = L10n.tr("text", "choicePokemon", fallback: "▶︎ポケモンをえらぶ")
   /// つづきから
   internal static let continuation = L10n.tr("text", "continuation", fallback: "つづきから")
+  /// ガチャ
+  internal static let gacha = L10n.tr("text", "gacha", fallback: "ガチャ")
   /// %@にするかい？。
   internal static func getPokemon(_ p1: Any) -> String {
     return L10n.tr("text", "getPokemon?", String(describing: p1), fallback: "%@にするかい？。")
