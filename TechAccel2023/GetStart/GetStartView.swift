@@ -76,7 +76,8 @@ struct GetStartView: View {
                 .padding(.vertical, 12)
 
                 NavigationLink {
-                    TopTabScreen()
+                    // storeに保存したポケモンを取得するようにする
+                    TopTabScreen(choicedPokemon: .hitokage)
                 } label: {
                     pokemonFontText(L10n.continuation)
                 }

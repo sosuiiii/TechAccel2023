@@ -27,7 +27,7 @@ struct StartAdventureScreen: View {
                 Spacer()
             }
             .navigationDestination(isPresented: $transitionToTopTab) {
-                TopTabScreen()
+                TopTabScreen(choicedPokemon: pokemon)
             }
             .onAppear {
                 jump(delay: 0)

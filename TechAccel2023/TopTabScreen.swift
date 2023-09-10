@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct TopTabScreen: View, Hashable {
+    let choicedPokemon: StartPokemon
     var body: some View {
         TabView {
             Text("b")
@@ -20,6 +21,7 @@ struct TopTabScreen: View, Hashable {
                     }
                 }
                 .tag(0)
+
             Text("a")
                 .tabItem {
                     VStack {
@@ -29,7 +31,8 @@ struct TopTabScreen: View, Hashable {
                     }
                 }
                 .tag(1)
-            Text("c")
+
+            PokemonListScreen()
                 .tabItem {
                     VStack {
                         Asset.Images.bag.swiftUIImage
