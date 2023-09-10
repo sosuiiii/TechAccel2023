@@ -25,6 +25,7 @@ final class AudioPlayerFactory {
     var hitokageSounds: AVAudioPlayer?
     var zenigameSounds: AVAudioPlayer?
     var battleToWildSounds: AVAudioPlayer?
+    var nibiCitySounds: AVAudioPlayer?
     init() {
         if case let .success(player) = AudioPlayerFactory.makePlayer(Files._01openingWav) {
             openingSounds = player
@@ -47,7 +48,11 @@ final class AudioPlayerFactory {
         if case let .success(player) = AudioPlayerFactory.makePlayer(Files._07battleToWildWav) {
             battleToWildSounds = player
         }
+        if case let .success(player) = AudioPlayerFactory.makePlayer(Files._09nibiCityWav, repeatCount: 30) {
+            nibiCitySounds = player
+        }
     }
+
     static func makePlayer(_ file: File, repeatCount: Int = 3) -> Result<AVAudioPlayer, Error> {
         let soundFileURL = URL(fileURLWithPath: file.path)
         do {

@@ -35,6 +35,13 @@ struct MapScreen: View {
                     .frame(width: 24, height: 24)
             }
         }
+        .onAppear {
+            if AudioPlayerFactory.shared.nibiCitySounds?.isPlaying == false {
+                AudioPlayerFactory.shared = AudioPlayerFactory()
+                AudioPlayerFactory.shared.nibiCitySounds?.play()
+            }
+        }
+        
     }
 }
 

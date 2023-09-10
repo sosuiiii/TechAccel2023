@@ -27,7 +27,7 @@ struct TopTabScreen: View, Hashable {
                     VStack {
                         Asset.Images.ball.swiftUIImage
                             .renderingMode(.template)
-                        Text(L10n.gacha)
+                        Text(L10n.map)
                     }
                 }
                 .tag(1)

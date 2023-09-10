@@ -18,6 +18,10 @@ struct PokemonListScreen: View {
         }
         .onAppear {
             viewModel.fetchPokemon()
+            if AudioPlayerFactory.shared.nibiCitySounds?.isPlaying == false {
+                AudioPlayerFactory.shared = AudioPlayerFactory()
+                AudioPlayerFactory.shared.nibiCitySounds?.play()
+            }
         }
     }
 
